@@ -1,7 +1,7 @@
 /*1.Hiển thị danh sách khách hàng*/
 select * from customer.customers;
 /*2. Tìm khaách hàng theo tên*/
-select CompanyName from customer.customers;
+select * from customer.customers where ContactName like "%Aria Cruz%";
 /*3.Hiển thị danh sach sản phẩm */
 select * from customer.products;
 /*4.Tìm sản phẩm theo giá bán trong khoảng do người dùng nhập vào*/

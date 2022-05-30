@@ -41,6 +41,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager" selected="Application.JdbcInsertTest">
     <configuration name="JdbcInsertTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -64,11 +65,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JdbcTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JdbcTest2" />
+      <module name="java2_04" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.JdbcInsertTest" />
-        <item itemvalue="Application.JdbcTest" />
+        <item itemvalue="Application.JdbcTest2" />
         <item itemvalue="Application.JdbcSelectTest" />
+        <item itemvalue="Application.JdbcTest" />
       </list>
     </recent_temporary>
   </component>
@@ -82,5 +91,16 @@
       <updated>1653118928980</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/JdbcInsertTest.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

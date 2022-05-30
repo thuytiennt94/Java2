@@ -1,11 +1,11 @@
 import java.sql.*;
+import java.util.Scanner;
+
 public class JdbcSelectTest {   //save ad JdbcSelectTest.java
     public static void main(String[] args) {
         try (
                 //step1 allocate a database 'connection' object
-                Connection conn = DriverManager.getConnection(
-                        "jdbc:mysql:// localhost:3306/ebookshop?allowPublicKeyRetrieval=true&useSSL=false&severTimezone=UTC",
-                        "root",""); // for mysql only
+                Connection conn = DriverManager.getConnection("jdbc:mysql:// localhost:3306/ebookshop", "root",""); // for mysql only
                 //the format is 'jdbc:mysql://hostname:port/database,"usename", "password"
 
                 //step2; allocate w 'statement' object in te connection
@@ -28,6 +28,7 @@ public class JdbcSelectTest {   //save ad JdbcSelectTest.java
                 ++rowCount;
             }
             System.out.println("total number of records = " + rowCount);
+
         }catch(SQLException ex){
             ex.printStackTrace();
         }//step 5: close conn and stmt - done automatcally by try - with - resources
