@@ -55,6 +55,7 @@ public class ktraJava2 {
                 pstmtUpdate.setString(1, iUpdate1);
                 pstmtUpdate.setString(2, iUpdate2);
                 System.out.println(pstmtUpdate);
+                pstmtUpdate.executeUpdate();
                 System.out.println("Update done");
                 System.out.println("----------------------------");
 
@@ -64,6 +65,7 @@ public class ktraJava2 {
                 String iDelete = scnDelete.nextLine();
                 pstmtDelete.setString(1, iDelete);
                 System.out.println(pstmtDelete);
+                pstmtDelete.executeUpdate();
                 System.out.println("Delete done");
                 System.out.println("----------------------------");
 
@@ -73,9 +75,7 @@ public class ktraJava2 {
                 String iSearch = scnSearch.nextLine();
                 pstmtSearch.setString(1, iSearch);
                 System.out.println(pstmtSearch);
-                System.out.println("Search done");
-                System.out.println("----------------------------");
-                pstmtSearch.executeUpdate();
+                
                 rset = pstmtSelect.executeQuery();
                 while (rset.next()) {
                     System.out.println(rset.getString("maphim") + ", " + rset.getString("tenphim")
