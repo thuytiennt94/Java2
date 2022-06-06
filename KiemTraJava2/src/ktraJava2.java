@@ -75,14 +75,14 @@ public class ktraJava2 {
                 String iSearch = scnSearch.nextLine();
                 pstmtSearch.setString(1, iSearch);
                 System.out.println(pstmtSearch);
-                
+
                 rset = pstmtSelect.executeQuery();
                 while (rset.next()) {
                     System.out.println(rset.getString("maphim") + ", " + rset.getString("tenphim")
                             + ", " + rset.getString("giochieu") + ", " + rset.getString("daodien")
                             + ", " + rset.getInt("time"));
                 }
-                conn.commit();
+                
             } catch (SQLException ex) {
 
                 ex.printStackTrace();
